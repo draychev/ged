@@ -22,5 +22,5 @@ run: clean fmt vet
 	go run main.go
 
 .PHONY: test
-test:
-	go test -v ./...
+test: vet
+	go test -v  -failfast ./...
