@@ -98,7 +98,7 @@ func main() {
 			lines := line.UserWrites()
 			line.AppendLine(cfg.CurLine, lines, cfg)
 		case "c":
-			panic("not implemnted")
+			panic("not implemented")
 		case "d":
 			line.Delete(getLine(cmd.From), cfg)
 		case "p":
@@ -121,7 +121,7 @@ func main() {
 		case "m":
 			line.Move(getLine(cmd.From), getLine(cmd.To), getLine(cmd.Parameters[0]), cfg)
 		case "x":
-			panic("not implemnted")
+			panic("not implemented")
 		case "=":
 			line.ShowLineNumber(cfg)
 		default:
