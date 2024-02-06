@@ -86,8 +86,10 @@ func main() {
 		userInput = strings.TrimSpace(userInput) // remove any trailing spaces
 		cmd, err := inparser.ReadCommand(userInput)
 		if err != nil {
-			log.Error().Err(err).Msgf("Error parsing command: %s\n", err)
-			os.Exit(1)
+			fmt.Println("?")
+			continue
+			// log.Error().Err(err).Msgf("Error parsing command: %s\n", err)
+			// os.Exit(1)
 		}
 
 		switch cmd.Command {
