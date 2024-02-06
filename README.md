@@ -1,4 +1,4 @@
-# ged is a Go implementation of the venerable `ed` text editor
+# ged is a Go (re)implementation of the venerable `ed` text editor
 
 
 ## Implemented Commands
